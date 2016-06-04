@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+
+<meta name="author" content="kasia99@gmx.de">
+<meta name="description" content="ECMA2015 inline babel transpile template">
+<meta name="keywords" content="Babel, Transpile, es6, ecma2015, Bootstrap, Template">
+
+<title>BABEL - ECMA2015 - TEMPLATE</title>
+
+<link rel="icon" href="http://www.faviconshut.com/pics/10/10124-pikachu-favicon-animated-favicon.gif">
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="container" class="container">
+<!-- PAGE CONTENT -->
+
+<!--SCRIPT (end page content) -->
+</div>
+<script>
+//globals
+var es6source;
+//onready
+$(function(){
+// Your ECMA2015 script
+es6source = (<><![CDATA[
+]]></>).toString();
+//transpile and evaluate es6source
+function babelify(src) {
+	var babelified = babel.transform(src||es6source);
+	(0,eval)(babelified.code);
+}
+});
+</script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/three.js/r69/three.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser-polyfill.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.min.js"></script>
+</body>
+</html>
